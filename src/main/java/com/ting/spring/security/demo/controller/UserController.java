@@ -14,17 +14,22 @@ public class UserController {
         return "Home: Hello World! v01";
     }
 
+    @GetMapping("/user")
+    public String geUser(){
+        return "Hello User!";
+    }
+
+    @GetMapping("/admin")
+    public String getAdmin(){
+        return "Hello Admin!";
+    }
+
 
     @GetMapping("/test")
     public String getTest(){
         return "Test: Hello World!";
     }
 
-    @PostMapping("/my/logout")
-    public String performLogout() {
-        // .. perform logout
-        return "redirect:/home";
-    }
 
 
 }
