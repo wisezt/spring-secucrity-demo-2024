@@ -13,8 +13,8 @@ import java.security.Principal;
 public class UserController {
 
     @GetMapping("/")
-    public String getHome(Principal principal){
-        return "Home: Hello World! " + principal.getName();
+    public String getHome( ){
+        return "Home: Hello World! ";
     }
 
     @GetMapping("/user")
